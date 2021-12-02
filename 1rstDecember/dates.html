@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--dates in java script-->
+<html>
+    <head>
+        <title>dates</title>
+
+    </head>
+    <body>
+        <p id="one"></p>
+        <script>
+            var d =new Date();
+            document.getElementById("one").innerHTML=d;//gets current date
+        </script>
+        <p id="two"></p>
+        <script>
+            var d = new Date(2021,11,1,4,5,56,58);
+            document.getElementById("two").innerHTML=d;//gives year,month,week,day,hours,minutes,secondsmiliseconds
+        </script>
+        <p id="three"></p>
+        <script>
+            var d = new Date("2021-december-1" );
+            document.getElementById("three").innerHTML=d;
+
+        </script>
+        <p id="four"></p>
+        <script>
+            var z = Date();
+
+            document.getElementById("four").innerHTML=d.toUTCString;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--date methods-->
+<html>
+    <head>
+        <title>datemethods</title>
+    </head>
+    <body>
+       <p id = "five"></p>
+       <script>
+           var d = new Date();
+           document.getElementById("five").innerHTML=d.getHours();
+       </script> 
+       <h1 id = "two">year</h1>
+       <script>
+           var d=new Date();
+           document.getElementById("two").innerHTML=d.getFullYear();
+           //this can be done for years,months,minutes,time,and others things realted to time
+       </script>
+       <p id="six"></p>
+       <script>
+           var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+           document.getElementById("six").innerHTML = months[d.getMonth(7)];//this can be used to get various times in the time zone
+       </script>
+    </body>
+</html>
